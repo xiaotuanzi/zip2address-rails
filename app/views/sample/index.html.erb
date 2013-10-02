@@ -1,0 +1,26 @@
+<p>
+入力した郵便番号から、それに対応する住所を表示します。
+</p>
+
+<p id="message" style="color:#800000; background-color:#ffd0d0;"></p>
+
+<table>
+<tr>
+  <td>郵便番号</td>
+  <td>
+    <input id="zipcode" style="width:7em;" value="5340001" />
+    <button type="button" onclick="find_address_remote($('#zipcode').val());">住所を検索</button>
+  </td>
+</tr>
+<tr>
+  <td>住所</td>
+  <td>
+    <input type="text" id="address" style="width:30em;" />
+  </td>
+</tr>
+</table>
+
+<hr/>
+<p>
+<a href="http://zip.cgis.biz/">郵便番号検索API</a>を使ってます。
+</p>
